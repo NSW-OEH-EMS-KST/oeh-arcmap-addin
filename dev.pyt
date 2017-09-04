@@ -2,9 +2,28 @@ import arcpy
 import pandas as pd
 from os.path import realpath, split, join
 
-shape_csv = "p:\Corporate\Tools\Software\Corporate\CoreLayers\shape.csv"
-grid_csv = "p:\Corporate\Tools\Software\Corporate\CoreLayers\grid.csv"
-image_csv = "p:\Corporate\Tools\Software\Corporate\CoreLayers\image.csv"
+# SHAPE_CSV = "p:\Corporate\Tools\Software\Corporate\CoreLayers\shape.csv"
+# IMAGE_CSV = "p:\Corporate\Tools\Software\Corporate\CoreLayers\grid.csv"
+# GRID_CSV = "p:\Corporate\Tools\Software\Corporate\CoreLayers\image.csv"
+SHAPE_CSV = join(split(realpath(__file__))[0], "shape.csv")
+IMAGE_CSV = join(split(realpath(__file__))[0], "image.csv")
+GRID_CSV = join(split(realpath(__file__))[0], "grid.csv")
+
+
+def layer_specs_from_csv(csv):
+
+    try:
+        df = pd.read_csv(csv)
+    except Exception as e:
+        return [("Error", "Error", e.message, "Error")]
+
+    df["Display"] = df["Category"] + " - " + df["Title"]
+
+    layer_specs = zip(df["Category"], df["Title"], df["Datasource"], df["Display"])
+
+    del df
+
+    return layer_specs
 
 
 class OehLayersTool(object):
@@ -13,36 +32,45 @@ class OehLayersTool(object):
 
         self.label = "Add OEH Layers"
         self.description = "Add corporate layers to the map"
-        self.canRunInBackground = False
+        self.canRunInBackground = True
 
-        self.df = pd.read_csv(join(split(realpath(__file__))[0], "shape2.csv"))
-        self.unique_category = list(self.df["Category"].unique())
-        self.layer_dict = {k.strip(): v.strip() for k, v in zip(self.df["Title"], self.df["Datasource"])}
+        self.layers_by_category = [("Shape", layer_specs_from_csv(SHAPE_CSV)),
+                                   ("Image", layer_specs_from_csv(IMAGE_CSV)),
+                                   ("Grid", layer_specs_from_csv(GRID_CSV))]
 
-        return
+        self.layer_dict = {}
+
+        for cat, layers in self.layers_by_category:
+            for _, __, source, display in layers:
+                self.layer_dict[display] = source
 
     def getParameterInfo(self):
 
-        params = []
+        param = arcpy.Parameter(
+            displayName="Target Dataframe",
+            name="target_dataframe",
+            datatype="GPString",
+            parameterType="Required",
+            direction="Input",
+            multiValue=False)
 
-        for u in self.unique_category:
+        param.filter.list = [f.name for f in arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"))]
+        param.value = param.filter.list[0]
 
-            df = self.df[(self.df["Category"] == u)]
+        params = [param]
 
-            choices = list(df["Title"].unique())
-
-            v = u.replace(" ", "_")
-
+        for category, layer_specs in self.layers_by_category:
             param = arcpy.Parameter(
-                displayName="{} Layers".format(v),
-                name="layers_{}".format(v),
+                displayName="{} Layers".format(category),
+                name="layers_{}".format(category),
                 datatype="GPString",
                 parameterType="Optional",
                 direction="Input",
                 multiValue=True,
-                category=u)
+                category=category)
 
-            param.filter.list = choices
+            param.filter.list = [display_name for _, __, ___, display_name in layer_specs]
+
             params.append(param)
 
         return params
@@ -61,13 +89,16 @@ class OehLayersTool(object):
 
     def execute(self, parameters, messages):
 
-        df = arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"), "*")[0]
+        df = arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"), parameters[0].valueAsText)[0]
+        df_name = df.name
 
         lyrs = []
 
-        for p in parameters:
+        for p in parameters[1:]:
+
             try:
                 v = [v.strip().strip("'") for v in p.ValueAsText.split(";")]
+
             except AttributeError:
                 continue
 
@@ -77,16 +108,16 @@ class OehLayersTool(object):
             messages.AddMessage("Adding layers...")
 
             for lyr in lyrs:
+                src = self.layer_dict[lyr]
 
-                ds = self.layer_dict[lyr]
+                messages.AddMessage("... adding layer '{}' from '{}' to dataframe '{}'".format(lyr, src, df_name))
+                try:
+                    layer = arcpy.mapping.Layer(src)
+                    layer.visible = False
+                    arcpy.mapping.AddLayer(df, layer, "BOTTOM")
 
-                messages.AddMessage("... adding '{}' from '{}'".format(lyr, ds))
-
-                addlayer = arcpy.mapping.Layer(ds)
-
-                addlayer.visible = False
-
-                arcpy.mapping.AddLayer(df, addlayer, "BOTTOM")
+                except Exception as e:
+                    messages.AddErrorMessage(e.message)
 
         else:
             messages.AddMessage("No layers selected")
@@ -95,12 +126,16 @@ class OehLayersTool(object):
 
 
 class Toolbox(object):
-
     def __init__(self):
-
         self.label = "OEH Layers"
         self.alias = "oeh_layers"
         self.tools = [OehLayersTool]
 
         return
 
+# code to add to the addin ...
+# def onClick(self):
+#
+#     pa.GPToolDialog(configure.Configuration().toolbox, "ConfigureTool")
+#
+#     return
