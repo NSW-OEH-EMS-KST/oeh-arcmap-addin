@@ -1,0 +1,17 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>Python Addin</Name><AddInID>{f8344f45-7b17-4466-a824-2fe0c7ece490}</AddInID><Description>OEH Addin</Description><Version>0.1</Version><Image /><Author>Alisa McAndrew</Author><Company>OEH</Company><Date>06/25/2013</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="OEHPythonAddin_addin.py" namespace="OEHPythonAddin_addin"><ArcMap>
+    <Commands>
+        <ComboBox caption="Select a Layer to be Active" category="Python Addin" class="activeLayerComboBoxClass" id="activeLayer_addin.combobox" itemSizeString="WWWWWW" message="" rows="4" sizeString="WWWWWW" tip="Select a layer to be active"><Help heading="" /></ComboBox>
+        <Button caption="Thick Outline" category="Python Addin" class="thickOutlineButtonClass" id="thickOutline_addin.button" image="Images\OutlineThick_Black.png" message="" tip="Thick outline for polyline and polygon features only"><Help heading="" /></Button>
+        <Button caption="Thin Outline" category="Python Addin" class="thinOutlineButtonClass" id="thinOutline_addin.button" image="Images\OutlineThin_Black.png" message="" tip="Thin outline for polyline and polygon features only"><Help heading="" /></Button>
+        <Button caption="Add ID" category="Python Addin" class="addIDClass" id="addID_addin.button" image="Images\AddID_Black.png" message="" tip="Add ID"><Help heading="" /></Button>
+        <Button caption="Update Area SqM" category="Python Addin" class="updateAreaSqMClass" id="updateAreaSqM_addin.button" image="Images\UpdateAreaSqMetre_Black.png" message="" tip="update Area SqM"><Help heading="" /></Button>
+        <Button caption="Update Area Ha" category="Python Addin" class="updateAreaHaClass" id="updateAreaHa.button" image="Images\UpdateAreaHectare_Black.png" message="" tip="update Area ha"><Help heading="" /></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="OEH Toolbar" category="Python Addin" id="OEH_addin.toolbar" showInitially="true"><Items><ComboBox refID="activeLayer_addin.combobox" /><Button refID="thickOutline_addin.button" /><Button refID="thinOutline_addin.button" /><Button refID="addID_addin.button" /><Button refID="updateAreaSqM_addin.button" /><Button refID="updateAreaHa.button" /><Button refID="zoomtoPoint_addin.button" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
