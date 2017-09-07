@@ -2,14 +2,14 @@ import arcpy
 import pandas as pd
 
 # LAYERS_CSV = "p:\Corporate\Tools\Software\Corporate\CoreLayers\layers.csv"
-LAYERS_CSV = "c:\Data\oeh-arcmap-addin\layers.csv"
+LAYERS_CSV = "c:\Data\layers.csv"
 
 
 def layer_specs_from_csv(csv):
 
     df = pd.read_csv(csv)
 
-    df["Display"] = df["Type"] + " : " + df["Category"] + " : " + df["Title"]
+    df['Display'] = df[["Type", "Category", "Title"]].apply(lambda x: "{} | {} | {}".format(*x), axis=1)
 
     layer_specs = zip(df["Type"], df["Category"], df["Title"], df["Datasource"], df["Display"])
 
@@ -27,7 +27,6 @@ class OehLayersTool(object):
         self.canRunInBackground = False
 
         self.layers = layer_specs_from_csv(LAYERS_CSV)
-
         self.layer_dict = {display: source for ty, cat, ti, source, display in self.layers}
 
     def getParameterInfo(self):
@@ -43,7 +42,7 @@ class OehLayersTool(object):
             param0.filter.list = [f.name for f in arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"))]
             param0.value = param0.filter.list[0]
         except:
-            param0.filter.list = ["Dummy Dataframe"]  # for ArcCatalog
+            param0.filter.list = ["No Dataframe"]  # e.g. To load in ArcCatalog
             param0.value = param0.filter.list[0]
 
         param1 = arcpy.Parameter(

@@ -5,7 +5,7 @@
     <Author>Dave Bye</Author><Company>OEH</Company><Date>05/09/2017</Date>
     <Targets><Target name="Desktop" version="10.4" /></Targets><AddIn language="PYTHON" library="oeh_addin.py" namespace="oeh_addin"><ArcMap>
     <Commands>
-        <Button caption="Add Layer" category="OEH" class="AddLayerButton" id="oeh_addin.AddLayer" image="Images\LayersWindowShow16.png" message="" tip="Add OEH corporate layers"><Help heading="" /></Button>
+        <Button caption="Add Layer" category="OEH" class="AddLayerButton" id="oeh_addin.AddLayer" image="Images\smiley16.png" message="" tip="Add OEH corporate layers to the map"><Help heading="" /></Button>
         </Commands>
     <Extensions>
             </Extensions>
