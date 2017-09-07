@@ -1,15 +1,29 @@
 Category,Title,Datasource
-GridCat1,GridTitle1,GridFile1
-GridCat2,GridTitle2,GridFile2
-GridCat3,GridTitle3,GridFile3
-GridCat4,GridTitle4,GridFile4
-GridCat5,GridTitle5,GridFile5
-GridCat6,GridTitle6,GridFile6
-GridCat7,GridTitle7,GridFile7
-GridCat8,GridTitle8,GridFile8
-GridCat9,GridTitle9,GridFile9
-GridCat10,GridTitle10,GridFile10
-GridCat11,GridTitle11,GridFile11
-GridCat12,GridTitle12,GridFile12
-GridCat13,GridTitle13,GridFile13
-GridCat14,GridTitle14,GridFile14
+Climate,Rainfall (Annual Precipitation),P:\Corporate\Grids\Climate\Rainfall\Bioclim2009_LCC\annual_precip
+Climate,Rainfall (Driest Period),P:\Corporate\Grids\Climate\Rainfall\Bioclim2009_LCC\driestperiod
+Climate,Rainfall (Wettest Period),P:\Corporate\Grids\Climate\Rainfall\Bioclim2009_LCC\wettestperiod
+Climate,Solar Radiation (Annual Mean),P:\Corporate\Grids\Climate\Solar\Bioclim2009_LCC\annual_mean
+Climate,Temperature (Annual Mean),P:\Corporate\Grids\Climate\Temperature\Bioclim2009_LCC\annual_mean
+Climate,Temperature (Annual Range),P:\Corporate\Grids\Climate\Temperature\Bioclim2009_LCC\annual_range
+Climate,Temperature (Max Warm Period),P:\Corporate\Grids\Climate\Temperature\Bioclim2009_LCC\maxwarmperiod
+Climate,Temperature (Min Cold Period),P:\Corporate\Grids\Climate\Temperature\Bioclim2009_LCC\mincoldperiod
+Climate,Wetness/Moisture (Annual Mean),P:\Corporate\Grids\Climate\Moisture\MoistureBioclim2009_LCC\annual_mean
+Terrain,Aspect (SRTM 30m LCC),P:\Corporate\Grids\Land\Landform\AspectLCC\aspect30m
+Terrain,Aspect (25m NorthEast MGA56),P:\Corporate\Grids\Land\Landform\AspectNorthEastM56\aspect25m
+Terrain,Slope (SRTM 30m LCC),P:\Corporate\Grids\Land\Landform\SlopeLCC\slope30m
+Terrain,Slope (25m NorthEast MGA56),P:\Corporate\Grids\Land\Landform\SlopeNorthEastM56\slope25m
+Terrain,Hillshade (SRTM 30m LCC),P:\Corporate\Grids\Land\Elevation\LCC\DEM30m_SRTM\hillshade30m
+Terrain,DEM (SRTM 30m LCC),P:\Corporate\Grids\Land\Elevation\LCC\DEM30m_SRTM\dem30m
+Terrain,DEM Fill (25m NorthEast MGA56),P:\Corporate\Grids\Land\Elevation\DEM_NorthEast_M56\demfill25m
+Terrain,DEM Fill (100m NorthEast MGA56),P:\Corporate\Grids\Land\Elevation\DEM_NorthEast_M56\demfill100m
+Terrain,DEM (5m Sydney MGA56),P:\Corporate\Grids\Land\Elevation\DEM_Sydney_M56\dem5m_syd
+Terrain,DEM Fill (25m SouthCentral MGA56),P:\Corporate\Grids\Land\Elevation\DEM_SouthCentral_M56\dem25m
+Terrain,DEM Fill (25m SouthEast MGA55),P:\Corporate\Grids\Land\Elevation\DEM_SouthEast_M55\dem25m_s55
+Vegetation,NSW Extant Veg (Keith & Simpson 2006),P:\Corporate\Grids\Vegetation\Extent\VegExtantNSW_LCC\extveg002
+Vegetation,Forest Ecosystems UNE,P:\Corporate\Grids\Vegetation\VegClassification\FE_CRA_Nthn_MGA56\fe_upper_ne
+Vegetation,Forest Ecosystems LNE,P:\Corporate\Grids\Vegetation\VegClassification\FE_CRA_Nthn_MGA56\fe_lower_ne
+Vegetation,Forest Ecosystems Southern Forests (Gellie),P:\Corporate\Grids\Vegetation\VegClassification\FE_SthnForestsGellie2005_LCC\veg_extant
+Vegetation,Grassy Ecosystems - Monaro,P:\Corporate\Grids\Vegetation\Extent\GrassyEcosystemsMonaro_M55\monaro_grass
+Vegetation,Grassy Ecosystems - Sthn Tablelands,P:\Corporate\Grids\Vegetation\Extent\GrassyEcosystemsSthnTablelands_M55\eric23
+Vegetation,Grassy Ecosystems - Upper Shoalhaven,P:\Corporate\Grids\Vegetation\Extent\GrassyEcosystemsUpperShoalhaven_M55\shoalh_grass
+Vegetation,SCIVI Veg,P:\Corporate\Grids\Vegetation\VegClassification\SCIVI_LCC\scivi

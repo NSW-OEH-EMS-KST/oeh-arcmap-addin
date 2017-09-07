@@ -1,15 +1,12 @@
 Category,Title,Datasource
-ImageCat1,ImageTitle1,ImageFile1
-ImageCat1,ImageTitle2,ImageFile2
-ImageCat1,ImageTitle3,ImageFile3
-ImageCat1,ImageTitle4,ImageFile4
-ImageCat2,ImageTitle5,ImageFile5
-ImageCat2,ImageTitle6,ImageFile6
-ImageCat2,ImageTitle7,ImageFile7
-ImageCat2,ImageTitle8,ImageFile8
-ImageCat3,ImageTitle9,ImageFile9
-ImageCat3,ImageTitle10,ImageFile10
-ImageCat3,ImageTitle11,ImageFile11
-ImageCat3,ImageTitle12,ImageFile12
-ImageCat3,ImageTitle13,ImageFile13
-ImageCat3,ImageTitle14,ImageFile14
+SPOT,SPOT5 2011 NSW Mosaic,P:\Corporate\Imagery\SPOT\sp5col2p5_nsw_ll_2011.ecw
+Topographic,Topo MGA54 25k & 50k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA54_25k_50k_P.lyr
+Topographic,Topo MGA54 100k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA54_100K_P.lyr
+Topographic,Topo MGA55 25k & 50k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA55_25k_50k_P.lyr
+Topographic,Topo MGA55 100k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA55_100K_P.lyr
+Topographic,Topo MGA56 25k & 50k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA56_25k_50k_P.lyr
+Topographic,Topo MGA56 100k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA56_100K_P.lyr
+Topographic,Topo NSW Mosaic ,P:\Corporate\Imagery\Topographic\Geographics\TopoMosaic_NSW.ecw
+Topographic,Topo NSW 250k Image Catalogue ,P:\Corporate\Layers\Imagery\Topographic\Topo250K_P.lyr
+Topographic,Topo NSW & Victoria (1M),P:\Corporate\Imagery\Topographic\Geographics\Topo_NSW_Vic_1M.ecw
+Topographic,Topo Australia (5M),P:\Corporate\Imagery\Topographic\Geographics\Australia_5M.ecw

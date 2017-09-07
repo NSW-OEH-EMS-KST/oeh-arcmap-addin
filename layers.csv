@@ -1,0 +1,163 @@
+Type,Category,Title,Datasource
+Vector,Administration,Offices for Planning & Environment Cluster,P:\Corporate\Layers\Admin\Corporate\Offices_PlanningEnvironmentCluster_P.lyr
+Vector,Administration,EPA Branches,P:\Corporate\Layers\Admin\Corporate\EPA_Branches_P.lyr
+Vector,Administration,EPA Regions,P:\Corporate\Layers\Admin\Corporate\EPA_Regions_P.lyr
+Vector,Administration,Regional Operations Branches,P:\Corporate\Layers\Admin\Corporate\OEH_RegionalOperationsBranches_P.lyr
+Vector,Administration,Regional Operations Regions,P:\Corporate\Layers\Admin\Corporate\OEH_RegionalOperationsRegions_P.lyr
+Vector,Administration,Heritage Division Regions,P:\Corporate\Layers\Admin\Corporate\OEH_HeritageDivisionRegions_P.lyr
+Vector,Administration,NPWS Branches (July 2017),P:\Corporate\Layers\Admin\Corporate\NPWS_Branches_18July2017_P.lyr
+Vector,Administration,NPWS Proposed Areas  (July 2017),P:\Corporate\Layers\Admin\Corporate\NPWS_AreasProposed_18July2017_P.lyr
+Vector,Administration,PWG Regions ,P:\Corporate\Layers\Admin\Corporate\PWG_Regions_P.lyr
+Vector,Administration,PWG Areas ,P:\Corporate\Layers\Admin\Corporate\PWG_Areas_P.lyr
+Vector,Administration,Electorates - Federal  c.LPI,P:\Corporate\Layers\Admin\Statutory\ElectoralDivisionsFederal_P.lyr
+Vector,Administration,Electorates - State  c.LPI,P:\Corporate\Layers\Admin\Statutory\ElectoralDistrictsState_P.lyr
+Vector,Administration,Kangaroo Management Zones,P:\Corporate\Layers\Admin\Corporate\KangarooManagementZones_P.lyr
+Vector,Administration,Land Councils c.LPI,P:\Corporate\Layers\Admin\Corporate\AboriginalLandCouncils_P.lyr
+Vector,Administration,LGAs  c.LPI,P:\Corporate\Layers\Admin\Statutory\LGA_P.lyr
+Vector,Administration,LGAs Pre-May 2016,P:\Corporate\Layers\Admin\Statutory\LGA_PreMay2016_P.lyr
+Vector,Administration,Local Land Service Regions  c. DTI,P:\Corporate\Layers\Admin\Corporate\LocalLandServiceRegions_P.lyr
+Vector,Administration,LEP Pre2006 Zones  c. DPE,P:\Corporate\Layers\Admin\Statutory\LEP_Pre2006_Zone_P.lyr
+Vector,Administration,LEP Standard Instrument Zones  c.DPE,P:\Corporate\Layers\Admin\Statutory\LEP_SI_LandZoning_P.lyr
+Vector,Administration,NSW Boundary,P:\Corporate\Layers\Admin\Statutory\NSW_P.lyr
+Vector,Administration,Postal Areas ,P:\Corporate\Layers\Admin\Statutory\PostalAreasAust_P.lyr
+Vector,Administration,SEPP 14 Coastal Wetland,P:\Corporate\Layers\Admin\Statutory\SEPP14_CoastalWetlands_P.lyr
+Vector,Administration,SEPP 26 Littoral Rainforest ,P:\Corporate\Layers\Admin\Statutory\SEPP26_LittoralRainforest_P.lyr
+Vector,Administration,SEPP 71 Coastal Protection,P:\Corporate\Layers\Admin\Statutory\SEPP71_CoastalProtection_P.lyr
+Vector,Cultural,Aboriginal Sites [NFR],P:\Region\Layers\Cultural\AboriginalSites.lyr
+Vector,Cultural,Aboriginal Places,P:\Corporate\Layers\Cultural\Aboriginal\AboriginalPlaces_P.lyr
+Vector,Cultural,Aboriginal CoManagement Reserves,P:\Corporate\Layers\Cultural\Aboriginal\AboriginalCoManagementReserves_P.lyr
+Vector,Cultural,Archaeological Surveys,P:\Corporate\Layers\Cultural\Aboriginal\ArchaeologicalSurveys_P.lyr
+Vector,Cultural,European Sites,P:\Corporate\Layers\Cultural\Historic\EuropeanSites_P.lyr
+Vector,Biodiversity,Atlas Threatened Fauna Live Link,P:\Corporate\Layers\Biodiversity\Fauna\AtlasThreatenedFaunaLiveLink_SDE.lyr
+Vector,Biodiversity,Atlas Threatened Flora Live Link,P:\Corporate\Layers\Biodiversity\Flora\AtlasThreatenedFloraLiveLink_SDE.lyr
+Vector,Biodiversity,Atlas Threatened Fauna,P:\Corporate\Layers\Biodiversity\Fauna\AtlasThreatenedFauna_P.lyr
+Vector,Biodiversity,Atlas Threatened Flora,P:\Corporate\Layers\Biodiversity\Flora\AtlasThreatenedFlora_P.lyr
+Vector,Biodiversity,Important Bird Areas of Australia,P:\Corporate\Layers\Biodiversity\Habitat\BirdAreasImportantAust_P.lyr
+Vector,Biodiversity,Critical Habitat,P:\Corporate\Layers\Biodiversity\Habitat\CriticalHabitat_P.lyr
+Vector,Biodiversity,Key Habitats & Corridors - North East,P:\Corporate\Layers\Biodiversity\Habitat\KeyHabitats&Corridors_NE_NSW_Group_P.lyr
+Vector,Biodiversity,Key Habitats & Corridors - Nandewar,P:\Corporate\Layers\Biodiversity\Habitat\KeyHabitats&CorridorsNandewarGroup_P.lyr
+Vector,Biodiversity,Wetlands (Kingsford) ,P:\Corporate\Layers\Biodiversity\Wetlands\WetlandsNSW_P.lyr
+Vector,Biodiversity,Directory of Important Wetlands c.GA,P:\Corporate\Layers\Biodiversity\Wetlands\WetlandsImportantAust_P.lyr
+Vector,Biodiversity,Ramsar Wetlands,P:\Corporate\Layers\Biodiversity\Wetlands\WetlandsRamsar_P.lyr
+Vector,Imagery Indexes,ADS Mosaics Index,P:\Corporate\Layers\Admin\IndexMaps\IndexADS_Mosaics_P.lyr
+Vector,Imagery Indexes,ADS 100k Map Name Index,P:\Corporate\Layers\Admin\IndexMaps\IndexTopographicMaps100K_Aust_P.lyr
+Vector,Imagery Indexes,Orthophoto Index (Zone 56),P:\Corporate\Layers\Admin\IndexMaps\IndexOrthophotosZone56_P.lyr
+Vector,Imagery Indexes,Landsat7 2000 Index,P:\Corporate\Layers\Admin\IndexMaps\IndexLandsat7_2000_P.lyr
+Vector,Imagery Indexes,Landsat7 2002 Index,P:\Corporate\Layers\Admin\IndexMaps\IndexLandsat7_2002_P.lyr
+Vector,Imagery Indexes,LiDAR Footprint,P:\Corporate\Layers\Admin\IndexMaps\IndexLidar_P.lyr
+Vector,Imagery Indexes,SPOT5 2004 - 05 Index ,P:\Corporate\Layers\Admin\IndexMaps\IndexSPOT5_TileDates0405_P.lyr
+Vector,Imagery Indexes,SPOT5 2007 - 08 Index,P:\Corporate\Layers\Admin\IndexMaps\IndexSPOT5_TileDates0708_P.lyr
+Vector,Imagery Indexes,Topographic Map Index,P:\Corporate\Layers\Admin\IndexMaps\IndexTopographicMapsAll_P.lyr
+Vector,Infrastructure,Built Up Areas  c.LPI,P:\Corporate\Layers\Infrastructure\Localities\BuiltUpArea_P.lyr
+Vector,Infrastructure,Towns  c.LPI,P:\Corporate\Layers\Infrastructure\Localities\CityTownVillage_P.lyr
+Vector,Infrastructure,Major Towns  c.LPI,P:\Corporate\Layers\Infrastructure\Localities\TownsMajor_P.lyr
+Vector,Infrastructure,Major Towns (for statewide maps)  c.LPI,P:\Corporate\Layers\Infrastructure\Localities\TownsMajorStatewide_P.lyr
+Vector,Infrastructure,Localities  c.LPI,P:\Corporate\Layers\Infrastructure\Localities\Places_P.lyr
+Vector,Infrastructure,Roads 25k  c.LPI,P:\Corporate\Layers\Infrastructure\Transport\Roads25k_P.lyr
+Vector,Infrastructure,Roads 250k  c.GA,P:\Corporate\Layers\Infrastructure\Transport\Roads250k_P.lyr
+Vector,Infrastructure,AMS Roads,P:\Corporate\Layers\Infrastructure\Assets\AMS_RoadSection_P.lyr
+Vector,Infrastructure,AMS Roads Fire Capacity,P:\Corporate\Layers\Infrastructure\Assets\AMS_RoadSectionFire_P.lyr
+Vector,Infrastructure,AMS Visitor Areas,P:\Corporate\Layers\Infrastructure\Assets\AMS_VisitorArea_P.lyr
+Vector,Infrastructure,AMS Lookouts,P:\Corporate\Layers\Infrastructure\Assets\AMS_Lookout_P.lyr
+Vector,Infrastructure,AMS Facilities,P:\Corporate\Layers\Infrastructure\Assets\AMS_FacilityPoint_P.lyr
+Vector,Infrastructure,AMS FMZ Transparent,P:\Corporate\Layers\Infrastructure\Assets\AMS_FireManagementZoneTransparent_P.lyr
+Vector,Infrastructure,AMS FMZ,P:\Corporate\Layers\Infrastructure\Assets\AMS_FireManagementZone_P.lyr
+Vector,Infrastructure,AMS Walking Tracks,P:\Corporate\Layers\Infrastructure\Assets\AMS_TrackSection_P.lyr
+Vector,Infrastructure,AMS Signs,P:\Corporate\Layers\Infrastructure\Assets\AMS_Sign_P.lyr
+Vector,Infrastructure,AMS Gates,P:\Corporate\Layers\Infrastructure\Assets\AMS_Gate_P.lyr
+Vector,Infrastructure,Bicentennial National Trail,P:\Corporate\Layers\Infrastructure\Transport\BicentennialNationalTrail_P.lyr
+Vector,Infrastructure,Railway Lines c. LPI,P:\Corporate\Layers\Infrastructure\Transport\Railway_P.lyr
+Vector,Geology & Soils,Geology (250k) c.DPI,P:\Corporate\Layers\Geology\Structural\Geology250k_P.lyr
+Vector,Geology & Soils,Acid Sulfate Soils (Risk),P:\Corporate\Layers\Soil\AcidSulfate\AcidSulfateSoilRisk_P.lyr
+Vector,Geology & Soils,Acid Sulfate Soils (Planning) ,P:\Corporate\Layers\Soil\AcidSulfate\AcidSulfatePriorityManagementAreas_P.lyr
+Vector,Land,Contours 10m,P:\Corporate\Layers\Land\Elevation\Contours10m_P.lyr
+Vector,Land,Contours 20m,P:\Corporate\Layers\Land\Elevation\Contours20m_P.lyr
+Vector,Land,Contours 100m,P:\Corporate\Layers\Land\Elevation\Contours100m_P.lyr
+Vector,Land,Botanical Divisions,P:\Corporate\Layers\Land\LandClass\BotanicalDivisions_Aust_P.lyr
+Vector,Land,IBRA Regions,P:\Corporate\Layers\Land\LandClass\IBRA_Aust_P.lyr
+Vector,Land,IBRA Regions (v4 for TSC Act),P:\Corporate\Layers\Land\LandClass\IBRA_Aust_v4_ForTSC_Act_P.lyr
+Vector,Land,IBRA Subregions,P:\Corporate\Layers\Land\LandClass\IBRASubRegions_Aust_P.lyr
+Vector,Land,Mitchell Landscapes,P:\Corporate\Layers\Land\LandClass\MitchellLandscapes_P.lyr
+Vector,Land,Land Capability,P:\Corporate\Layers\Land\LandClass\LandCapability_P.lyr
+Vector,Land,Land Use,P:\Corporate\Layers\Land\LandUse\Landuse_P.lyr
+Vector,Tenure,Cadastre c.LPI,P:\Corporate\Layers\Tenure\Cadastre\Cadastre_P.lyr
+Vector,Tenure,Marine Park ,P:\Corporate\Layers\Tenure\CrownEstate\MarineParkBoundaries_P.lyr
+Vector,Tenure,NPWS Estate,P:\Corporate\Layers\Tenure\CrownEstate\NPWS_Estate_P.lyr
+Vector,Tenure,NPWS Estate (internal addition lines),P:\Corporate\Layers\Tenure\CrownEstate\NPWS_EstateInternalBoundaries_P.lyr
+Vector,Tenure,NPWS Estate by NPWS Boundaries (May 2017),P:\Corporate\Layers\Tenure\CrownEstate\NPWS_EstateByNPWS_Boundaries_P.lyr
+Vector,Tenure,NPWS Acquired Not Gazetted,P:\Corporate\Layers\Tenure\CrownEstate\NPWS_AcquiredNotGazetted_P.lyr
+Vector,Tenure,NPWS Managed Land Other,P:\Corporate\Layers\Tenure\CrownEstate\NPWS_ManagedLandOther_P.lyr
+Vector,Tenure,NPWS Vested ,P:\Corporate\Layers\Tenure\CrownEstate\NPWS_Vested_P.lyr
+Vector,Tenure,State Forest Estate c. FC,P:\Corporate\Layers\Tenure\CrownEstate\FNSW_Boundaries_P.lyr
+Vector,Tenure,State Forest Flora Reserves  c.FC,P:\Corporate\Layers\Tenure\CrownEstate\FNSW_FloraReserves_P.lyr
+Vector,Tenure,Wilderness Declared ,P:\Corporate\Layers\Tenure\Conservation\WildernessDeclared_P.lyr
+Vector,Tenure,Wilderness Identified ,P:\Corporate\Layers\Tenure\Conservation\WildernessIdentified_P.lyr
+Vector,Tenure,Wild Rivers Declared  ,P:\Corporate\Layers\Water\Classification\RiversWild_P.lyr
+Vector,Tenure,Wild River Catchments Declared  ,P:\Corporate\Layers\Water\Classification\CatchmentsWildRivers_P.lyr
+Vector,Tenure,World Heritage Areas (1994) ,P:\Corporate\Layers\Tenure\Conservation\WorldHeritageAreas_P.lyr
+Vector,Vegetation,Biometric Shoalhaven Eurobodalla Bega Veg,P:\Corporate\Layers\Vegetation\VegClassification\BiometricShoalhavenEurobodallaBega_VIS3900_P.lyr
+Vector,Vegetation,Central Southern NSW ADS40 Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegCentralSouthernNSW_ADS40_VIS3884_P.lyr
+Vector,Vegetation,Coastal Reserves Veg NE (Griffiths Wilson),P:\Corporate\Layers\Vegetation\VegClassification\CoastVeg_NE_NSW_VIS3885_P.lyr
+Vector,Vegetation,CRAFTI Floristics UNE,P:\Corporate\Layers\Vegetation\VegClassification\Floristics_CRA_Nthn_CRAFTI_UNE_VIS1108_P.lyr
+Vector,Vegetation,CRAFTI Floristics LNE,P:\Corporate\Layers\Vegetation\VegClassification\Floristics_CRA_Nthn_CRAFTI_LNE_VIS1082_P.lyr
+Vector,Vegetation,Cumberland Plain Gt 10%  2007 Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegCumberlandPlain_cc_gt_10pc_2007_Extant_VIS3785_P.lyr                    
+Vector,Vegetation,Estuarine Veg 1986,P:\Corporate\Layers\Vegetation\VegClassification\EstuarineVegetation1986_VIS4134_P.lyr
+Vector,Vegetation,Far South Coast Veg (Beukers-Miles),P:\Corporate\Layers\Vegetation\VegClassification\VegBeukersMiles_FSC_M55_P.lyr
+Vector,Vegetation,Forest Ecosystems Sthn Forests (Gellie),P:\Corporate\Layers\Vegetation\VegClassification\ForestEcosystemsSthnForestsGellie2005_LCC_P.lyr
+Vector,Vegetation,Greater Hunter Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegHunterGreater_VIS3855_P.lyr
+Vector,Vegetation,Illawarra 2002 Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegIllawarra2002_VIS3778_VIS.lyr                                                                
+Vector,Vegetation,LHCC REMS Veg 2000,P:\Corporate\Layers\Vegetation\VegClassification\VegLowerHunterCentralCoastREMS_2000_VIS2225_VIS.lyr
+Vector,Vegetation,Nandewar WRA API Veg ,P:\Corporate\Layers\Vegetation\VegClassification\VegNandewarWRA_VIS12_P.lyr
+Vector,Vegetation,Northern Rivers CMA Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegNthnRiversCMA_VIS524_P.lyr
+Vector,Vegetation,Rainforest NE,P:\Corporate\Layers\Vegetation\Extent\RainforestNE_NSW_VIS3887_P.lyr
+Vector,Vegetation,SCIVI Sydney South Coast Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegSCIVI_SydneySouthCoast_VIS2230_P.lyr
+Vector,Vegetation,State Forests Forest Types,P:\Corporate\Layers\Vegetation\VegClassification\ForestTypesFNSW_VIS4026_P.lyr
+Vector,Vegetation,Sydney Metro 2016 Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegSydneyMetro_VIS4489_P.lyr                            
+Vector,Vegetation,Warragamba 2003 Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegWarragamba2003_VIS2380_VIS.lyr                                                      
+Vector,Vegetation,Woronora 2003 Veg,P:\Corporate\Layers\Vegetation\VegClassification\VegWoronora2003_VIS2387_VIS.lyr                                                           
+Vector,Water,Catchments Major c.LPI,P:\Corporate\Layers\Land\Landform\Catchments_P.lyr
+Vector,Water,Catchments Sub ,P:\Corporate\Layers\Water\Classification\SubCatchmentsStressedRivers_P.lyr
+Vector,Water,Land & Water  c.LPI,P:\Corporate\Layers\Marine\MarineFeatures\CoastlinePolygon25K_P.lyr
+Vector,Water,Land & Low Water (North East)  c.LPI,P:\Corporate\Layers\Marine\MarineFeatures\LandAndLowWaterNorthEast_P.lyr
+Vector,Water,Rivers Major  c.LPI,P:\Corporate\Layers\Water\Drainage\RiversMajor250k_P.lyr
+Vector,Water,Waterbodies (25k to 50k)  c.LPI,P:\Corporate\Layers\Water\Drainage\WaterBody25to50K_P.lyr
+Vector,Water,Watercourses (25k to 50k)  c.LPI,P:\Corporate\Layers\Water\Drainage\Watercourse25to50K_P.lyr
+Raster,Climate,Rainfall (Annual Precipitation),P:\Corporate\Grids\Climate\Rainfall\Bioclim2009_LCC\annual_precip
+Raster,Climate,Rainfall (Driest Period),P:\Corporate\Grids\Climate\Rainfall\Bioclim2009_LCC\driestperiod
+Raster,Climate,Rainfall (Wettest Period),P:\Corporate\Grids\Climate\Rainfall\Bioclim2009_LCC\wettestperiod
+Raster,Climate,Solar Radiation (Annual Mean),P:\Corporate\Grids\Climate\Solar\Bioclim2009_LCC\annual_mean
+Raster,Climate,Temperature (Annual Mean),P:\Corporate\Grids\Climate\Temperature\Bioclim2009_LCC\annual_mean
+Raster,Climate,Temperature (Annual Range),P:\Corporate\Grids\Climate\Temperature\Bioclim2009_LCC\annual_range
+Raster,Climate,Temperature (Max Warm Period),P:\Corporate\Grids\Climate\Temperature\Bioclim2009_LCC\maxwarmperiod
+Raster,Climate,Temperature (Min Cold Period),P:\Corporate\Grids\Climate\Temperature\Bioclim2009_LCC\mincoldperiod
+Raster,Climate,Wetness/Moisture (Annual Mean),P:\Corporate\Grids\Climate\Moisture\MoistureBioclim2009_LCC\annual_mean
+Raster,Terrain,Aspect (SRTM 30m LCC),P:\Corporate\Grids\Land\Landform\AspectLCC\aspect30m
+Raster,Terrain,Aspect (25m NorthEast MGA56),P:\Corporate\Grids\Land\Landform\AspectNorthEastM56\aspect25m
+Raster,Terrain,Slope (SRTM 30m LCC),P:\Corporate\Grids\Land\Landform\SlopeLCC\slope30m
+Raster,Terrain,Slope (25m NorthEast MGA56),P:\Corporate\Grids\Land\Landform\SlopeNorthEastM56\slope25m
+Raster,Terrain,Hillshade (SRTM 30m LCC),P:\Corporate\Grids\Land\Elevation\LCC\DEM30m_SRTM\hillshade30m
+Raster,Terrain,DEM (SRTM 30m LCC),P:\Corporate\Grids\Land\Elevation\LCC\DEM30m_SRTM\dem30m
+Raster,Terrain,DEM Fill (25m NorthEast MGA56),P:\Corporate\Grids\Land\Elevation\DEM_NorthEast_M56\demfill25m
+Raster,Terrain,DEM Fill (100m NorthEast MGA56),P:\Corporate\Grids\Land\Elevation\DEM_NorthEast_M56\demfill100m
+Raster,Terrain,DEM (5m Sydney MGA56),P:\Corporate\Grids\Land\Elevation\DEM_Sydney_M56\dem5m_syd
+Raster,Terrain,DEM Fill (25m SouthCentral MGA56),P:\Corporate\Grids\Land\Elevation\DEM_SouthCentral_M56\dem25m
+Raster,Terrain,DEM Fill (25m SouthEast MGA55),P:\Corporate\Grids\Land\Elevation\DEM_SouthEast_M55\dem25m_s55
+Raster,Vegetation,NSW Extant Veg (Keith & Simpson 2006),P:\Corporate\Grids\Vegetation\Extent\VegExtantNSW_LCC\extveg002
+Raster,Vegetation,Forest Ecosystems UNE,P:\Corporate\Grids\Vegetation\VegClassification\FE_CRA_Nthn_MGA56\fe_upper_ne
+Raster,Vegetation,Forest Ecosystems LNE,P:\Corporate\Grids\Vegetation\VegClassification\FE_CRA_Nthn_MGA56\fe_lower_ne
+Raster,Vegetation,Forest Ecosystems Southern Forests (Gellie),P:\Corporate\Grids\Vegetation\VegClassification\FE_SthnForestsGellie2005_LCC\veg_extant
+Raster,Vegetation,Grassy Ecosystems - Monaro,P:\Corporate\Grids\Vegetation\Extent\GrassyEcosystemsMonaro_M55\monaro_grass
+Raster,Vegetation,Grassy Ecosystems - Sthn Tablelands,P:\Corporate\Grids\Vegetation\Extent\GrassyEcosystemsSthnTablelands_M55\eric23
+Raster,Vegetation,Grassy Ecosystems - Upper Shoalhaven,P:\Corporate\Grids\Vegetation\Extent\GrassyEcosystemsUpperShoalhaven_M55\shoalh_grass
+Raster,Vegetation,SCIVI Veg,P:\Corporate\Grids\Vegetation\VegClassification\SCIVI_LCC\scivi
+Image,SPOT,SPOT5 2011 NSW Mosaic,P:\Corporate\Imagery\SPOT\sp5col2p5_nsw_ll_2011.ecw
+Image,Topographic,Topo MGA54 25k & 50k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA54_25k_50k_P.lyr
+Image,Topographic,Topo MGA54 100k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA54_100K_P.lyr
+Image,Topographic,Topo MGA55 25k & 50k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA55_25k_50k_P.lyr
+Image,Topographic,Topo MGA55 100k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA55_100K_P.lyr
+Image,Topographic,Topo MGA56 25k & 50k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA56_25k_50k_P.lyr
+Image,Topographic,Topo MGA56 100k Image Catalogue,P:\Corporate\Layers\Imagery\Topographic\TopoMGA56_100K_P.lyr
+Image,Topographic,Topo NSW Mosaic ,P:\Corporate\Imagery\Topographic\Geographics\TopoMosaic_NSW.ecw
+Image,Topographic,Topo NSW 250k Image Catalogue ,P:\Corporate\Layers\Imagery\Topographic\Topo250K_P.lyr
+Image,Topographic,Topo NSW & Victoria (1M),P:\Corporate\Imagery\Topographic\Geographics\Topo_NSW_Vic_1M.ecw
+Image,Topographic,Topo Australia (5M),P:\Corporate\Imagery\Topographic\Geographics\Australia_5M.ecw
