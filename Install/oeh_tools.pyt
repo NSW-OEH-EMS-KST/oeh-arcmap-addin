@@ -95,4 +95,3 @@ class Toolbox(object):
         self.tools = [OehLayersTool]
 
         return
-

@@ -8,6 +8,8 @@
         <Button caption="Add Layer" category="OEH" class="AddLayerButton" id="oeh_addin.AddLayer" image="Images\smiley16.png" message="" tip="Add OEH corporate layers to the map"><Help heading="" /></Button>
         </Commands>
     <Extensions>
+        <Extension autoLoad="True" category="OEH" class="OehExtension" description="OEH Extension"
+                   id="oeh_addin.extension" name="OEH" productName="OEH" showInExtensionDialog="True" />
             </Extensions>
     <Toolbars>
         <Toolbar caption="OEH" category="OEH" id="OEH_addin.toolbar" showInitially="true">

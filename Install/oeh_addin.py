@@ -5,7 +5,7 @@ from os.path import dirname, realpath, join, isfile
 def get_toolbox():
 
     script_path = dirname(realpath(__file__))
-    toolbox = join(script_path, "oeh_addin.pyt")
+    toolbox = join(script_path, "oeh_tools.pyt")
 
     if not isfile(toolbox):
         raise ValueError("OEH Addin Toolbox not found: {}".format(toolbox))
@@ -24,6 +24,6 @@ class AddLayerButton(object):
 
         except Exception as e:
 
-            pythonaddins.MessageBox("Error: {}".format(e))
+            pythonaddins.MessageBox("Error: {}".format(e), "Add Layer")
 
         return
