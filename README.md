@@ -1,2 +1,3 @@
 # oeh-arcmap-addin
-Some custom functionality for OEH GIS users
+Replaces the OEH 'Smiley Face' VBA add-in as of ArcGIS 10.4
+
