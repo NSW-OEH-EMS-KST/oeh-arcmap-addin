@@ -1,8 +1,8 @@
 import arcpy
 import pandas as pd
 
-# LAYERS_CSV = "p:\Corporate\Tools\Software\Corporate\CoreLayers\layers.csv"
-LAYERS_CSV = "c:\Data\layers.csv"
+LAYERS_CSV = "p:\Corporate\Tools\Software\Corporate\CoreLayers\layers.csv"
+# LAYERS_CSV = "c:\Data\layers.csv"
 
 
 def layer_specs_from_csv(csv):
