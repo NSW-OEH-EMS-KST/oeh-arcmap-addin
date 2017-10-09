@@ -2,7 +2,6 @@ import arcpy
 import pandas as pd
 
 LAYERS_CSV = "p:\Corporate\Tools\Software\Corporate\CoreLayers\layers.csv"
-# LAYERS_CSV = "c:\Data\layers.csv"
 
 
 def layer_specs_from_csv(csv):
@@ -18,12 +17,12 @@ def layer_specs_from_csv(csv):
     return layer_specs
 
 
-class OehLayersTool(object):
+class AddCoreLayersTool(object):
 
     def __init__(self):
 
-        self.label = "Add OEH Layers"
-        self.description = "Add corporate layers to the map"
+        self.label = "Add Core Layers"
+        self.description = "Add core layers to the map"
         self.canRunInBackground = False
 
         self.layers = layer_specs_from_csv(LAYERS_CSV)
@@ -90,8 +89,8 @@ class Toolbox(object):
 
     def __init__(self):
 
-        self.label = "OEH"
-        self.alias = "oeh_tools"
-        self.tools = [OehLayersTool]
+        self.label = "Core Layers"
+        self.alias = "core_layers_tools"
+        self.tools = [AddCoreLayersTool]
 
         return
