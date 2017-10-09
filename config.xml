@@ -1,5 +1,5 @@
 <ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <Name>OEH Layers</Name>
+    <Name>Core Layers</Name>
     <AddInID>{f8344f45-7b17-4466-a824-2fe0c7ece490}</AddInID>
     <Description>Core Layers Addin</Description>
     <Version>0.1</Version>
@@ -13,7 +13,7 @@
     <AddIn language="PYTHON" library="core_layers_addin.py" namespace="core_layers_addin">
         <ArcMap>
             <Commands>
-                <Button caption="Add Layer" category="OEH"
+                <Button caption="Add Core Layer" category="Core Layers"
                         class="AddLayerButton"
                         id="core_layers_addin.AddLayer"
                         image="Images\smiley16.png" message=""
@@ -23,7 +23,8 @@
             <Extensions>
             </Extensions>
             <Toolbars>
-                <Toolbar caption="OEH" category="OEH" id="core_layers_addin.toolbar" showInitially="true">
+                <Toolbar caption="Core Layers" category="Core Layers"
+                         id="core_layers_addin.toolbar" showInitially="true">
                     <Items>
                         <Button refID="core_layers_addin.AddLayer" />
                     </Items>
