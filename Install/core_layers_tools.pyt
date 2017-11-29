@@ -53,7 +53,8 @@ class AddCoreLayersTool(object):
             name="layers_list",
             datatype="DEFile",
             parameterType="Required",
-            direction="Input")
+            direction="Input",
+            category="advanced")
 
         param0.filter.list = ['csv']
         param0.value = LAYERS_CSV
@@ -65,7 +66,8 @@ class AddCoreLayersTool(object):
             datatype="GPString",
             parameterType="Required",
             direction="Input",
-            multiValue=False)
+            multiValue=False,
+            category="advanced")
         try:
             param1.filter.list = [f.name for f in arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"))]
             param1.value = param1.filter.list[0]
@@ -79,7 +81,8 @@ class AddCoreLayersTool(object):
             datatype="GPString",
             parameterType="Required",
             direction="Input",
-            multiValue=False)
+            multiValue=False,
+            category="advanced")
         param2.filter.list = ["TOP", "BOTTOM", "AUTO_ARRANGE"]
         param2.value = param2.filter.list[0]
 
@@ -93,17 +96,18 @@ class AddCoreLayersTool(object):
 
         param3.filter.list = [display for cat, ti, src, display in self.layers]
 
-        return [param0, param1, param2, param3]
+        # return [param0, param1, param2, param3]
+        return [param3, param0, param1, param2]
 
     def execute(self, parameters, messages):
 
         messages.AddMessage("Executing...")
-        df = arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"), parameters[1].valueAsText)[0]
+        df = arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"), parameters[2].valueAsText)[0]
         df_name = df.name
 
-        pos = parameters[2].valueAsText
+        pos = parameters[3].valueAsText
 
-        lyrs = [v.strip().strip("'") for v in parameters[3].ValueAsText.split(";")]
+        lyrs = [v.strip().strip("'") for v in parameters[0].ValueAsText.split(";")]
 
         if lyrs:
             messages.AddMessage("Adding layers...")
@@ -130,8 +134,8 @@ class Toolbox(object):
 
     def __init__(self):
 
-        self.label = "OEH"
-        self.alias = "oeh_tools"
+        self.label = "Core Layers Toolbox"
+        self.alias = "core_layers_toolbox"
         self.tools = [AddCoreLayersTool]
 
         return
