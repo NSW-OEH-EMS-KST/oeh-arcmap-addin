@@ -65,7 +65,7 @@ fn1 = split(cwd)[-1] + ".esriaddin"
 udir = "C:\\Users\\byed\\"
 if not exists(udir):
     udir = "C:\\Users\\aspire\\"
-fn2 = join(udir, "Documents\\ArcGIS\\AddIns\\Desktop10.4\\oeh_addin.esriaddin")
+fn2 = join(udir, "Documents\\ArcGIS\\AddIns\\Desktop10.4\\core-layers-addin.esriaddin")
 
 copyfile(fn1, fn2)
 print "Files replaced"
