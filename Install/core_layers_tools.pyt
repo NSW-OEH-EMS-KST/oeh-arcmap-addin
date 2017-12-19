@@ -1,26 +1,20 @@
 import arcpy
-import pandas as pd
 from os.path import exists
-
+import csv
 
 LAYERS_CSV = None
 LAYERS_CSV_1 = "P:\Region\Other\Tools\CoreLayers\layers.csv"
 LAYERS_CSV_2 = "P:\Corporate\Tools\Software\Corporate\CoreLayers\layers.csv"
 
 
-def layer_specs_from_csv(csv):
+def layer_specs_from_csv(source_csv):
 
     try:
-        df = pd.read_csv(csv)
-
-        # df['Display'] = df[["Type", "Category", "Title"]].apply(lambda x: "{} | {} | {}".format(*x), axis=1)
-        df['Display'] = df[["Category", "Title"]].apply(lambda x: "{} | {}".format(*x), axis=1)
-
-        layer_specs = zip(df["Category"], df["Title"], df["Datasource"], df["Display"])
-
-        del df
+        with open(source_csv, 'rb') as csvfile:
+            rows = csv.reader(csvfile, delimiter=',')
+            layer_specs = [r for r in rows][1:]  # remove header and make list not generator
     except:
-        layer_specs = [["CSV error", "CSV error", "CSV error", "CSV error", "CSV error"]]
+        layer_specs = [["CSV error", "CSV error", "CSV error"]]
 
     return layer_specs
 
@@ -44,7 +38,11 @@ class AddCoreLayersTool(object):
             LAYERS_CSV = LAYERS_CSV_1
 
         self.layers = layer_specs_from_csv(LAYERS_CSV)
-        self.layer_dict = {display: source for cat, ti, source, display in self.layers}
+
+        self.layer_dict = {"{} | {}".format(cat, tit): source for cat, tit, source in self.layers}
+
+        return
+
 
     def getParameterInfo(self):
 
@@ -94,9 +92,8 @@ class AddCoreLayersTool(object):
             direction="Input",
             multiValue=True)
 
-        param3.filter.list = [display for cat, ti, src, display in self.layers]
+        param3.filter.list = sorted(self.layer_dict.keys())  # [display for cat, ti, src, display in self.layers]
 
-        # return [param0, param1, param2, param3]
         return [param3, param0, param1, param2]
 
     def execute(self, parameters, messages):
