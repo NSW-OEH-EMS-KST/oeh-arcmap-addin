@@ -1,18 +1,26 @@
 import arcpy
 import pandas as pd
+from os.path import exists
 
-LAYERS_CSV = "p:\Corporate\Tools\Software\Corporate\CoreLayers\layers.csv"
+
+LAYERS_CSV = None
+LAYERS_CSV_1 = "P:\Region\Other\Tools\CoreLayers\layers.csv"
+LAYERS_CSV_2 = "P:\Corporate\Tools\Software\Corporate\CoreLayers\layers.csv"
 
 
 def layer_specs_from_csv(csv):
 
-    df = pd.read_csv(csv)
+    try:
+        df = pd.read_csv(csv)
 
-    df['Display'] = df[["Type", "Category", "Title"]].apply(lambda x: "{} | {} | {}".format(*x), axis=1)
+        # df['Display'] = df[["Type", "Category", "Title"]].apply(lambda x: "{} | {} | {}".format(*x), axis=1)
+        df['Display'] = df[["Category", "Title"]].apply(lambda x: "{} | {}".format(*x), axis=1)
 
-    layer_specs = zip(df["Type"], df["Category"], df["Title"], df["Datasource"], df["Display"])
+        layer_specs = zip(df["Category"], df["Title"], df["Datasource"], df["Display"])
 
-    del df
+        del df
+    except:
+        layer_specs = [["CSV error", "CSV error", "CSV error", "CSV error", "CSV error"]]
 
     return layer_specs
 
@@ -25,26 +33,60 @@ class AddCoreLayersTool(object):
         self.description = "Add core layers to the map"
         self.canRunInBackground = False
 
+        global LAYERS_CSV
+
+        if not exists(LAYERS_CSV_1):
+            if not exists(LAYERS_CSV_2):
+                LAYERS_CSV = "Neither '{}' nor '{}' could be found on the system".format(LAYERS_CSV_1, LAYERS_CSV_2)
+            else:
+                LAYERS_CSV = LAYERS_CSV_2
+        else:
+            LAYERS_CSV = LAYERS_CSV_1
+
         self.layers = layer_specs_from_csv(LAYERS_CSV)
-        self.layer_dict = {display: source for ty, cat, ti, source, display in self.layers}
+        self.layer_dict = {display: source for cat, ti, source, display in self.layers}
 
     def getParameterInfo(self):
 
         param0 = arcpy.Parameter(
+            displayName="Layer list in use",
+            name="layers_list",
+            datatype="DEFile",
+            parameterType="Required",
+            direction="Input",
+            category="advanced")
+
+        param0.filter.list = ['csv']
+        param0.value = LAYERS_CSV
+        param0.enabled = False
+
+        param1 = arcpy.Parameter(
             displayName="Target Dataframe",
             name="target_dataframe",
             datatype="GPString",
             parameterType="Required",
             direction="Input",
-            multiValue=False)
+            multiValue=False,
+            category="advanced")
         try:
-            param0.filter.list = [f.name for f in arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"))]
-            param0.value = param0.filter.list[0]
+            param1.filter.list = [f.name for f in arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"))]
+            param1.value = param1.filter.list[0]
         except:
-            param0.filter.list = ["No Dataframe"]  # e.g. To load in ArcCatalog
-            param0.value = param0.filter.list[0]
+            param1.filter.list = ["No Dataframe"]  # e.g. To load in ArcCatalog
+            param1.value = param1.filter.list[0]
 
-        param1 = arcpy.Parameter(
+        param2 = arcpy.Parameter(
+            displayName="Target Position",
+            name="target_position",
+            datatype="GPString",
+            parameterType="Required",
+            direction="Input",
+            multiValue=False,
+            category="advanced")
+        param2.filter.list = ["TOP", "BOTTOM", "AUTO_ARRANGE"]
+        param2.value = param2.filter.list[0]
+
+        param3 = arcpy.Parameter(
             displayName="Available Layers",
             name="available_layers",
             datatype="GPString",
@@ -52,17 +94,20 @@ class AddCoreLayersTool(object):
             direction="Input",
             multiValue=True)
 
-        param1.filter.list = [display for ty, cat, ti, src, display in self.layers]
+        param3.filter.list = [display for cat, ti, src, display in self.layers]
 
-        return [param0, param1]
+        # return [param0, param1, param2, param3]
+        return [param3, param0, param1, param2]
 
     def execute(self, parameters, messages):
 
         messages.AddMessage("Executing...")
-        df = arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"), parameters[0].valueAsText)[0]
+        df = arcpy.mapping.ListDataFrames(arcpy.mapping.MapDocument("CURRENT"), parameters[2].valueAsText)[0]
         df_name = df.name
 
-        lyrs = [v.strip().strip("'") for v in parameters[1].ValueAsText.split(";")]
+        pos = parameters[3].valueAsText
+
+        lyrs = [v.strip().strip("'") for v in parameters[0].ValueAsText.split(";")]
 
         if lyrs:
             messages.AddMessage("Adding layers...")
@@ -70,11 +115,11 @@ class AddCoreLayersTool(object):
             for lyr in lyrs:
                 src = self.layer_dict[lyr]
 
-                messages.AddMessage("... adding layer '{}' from '{}' to dataframe '{}'".format(lyr, src, df_name))
+                messages.AddMessage("... adding layer '{}' from '{}' to dataframe '{}' at position '{}'".format(lyr, src, df_name, pos))
                 try:
                     layer = arcpy.mapping.Layer(src)
                     layer.visible = False
-                    arcpy.mapping.AddLayer(df, layer, "BOTTOM")
+                    arcpy.mapping.AddLayer(df, layer, pos)
 
                 except Exception as e:
                     messages.AddErrorMessage(e.message)
@@ -89,8 +134,8 @@ class Toolbox(object):
 
     def __init__(self):
 
-        self.label = "Core Layers"
-        self.alias = "core_layers_tools"
+        self.label = "Core Layers Toolbox"
+        self.alias = "core_layers_toolbox"
         self.tools = [AddCoreLayersTool]
 
         return

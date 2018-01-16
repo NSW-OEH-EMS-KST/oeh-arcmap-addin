@@ -8,7 +8,8 @@ def get_toolbox():
     toolbox = join(script_path, "core_layers_tools.pyt")
 
     if not isfile(toolbox):
-        raise ValueError("Core Layers Addin Toolbox not found: {}".format(toolbox))
+        # return "{} not found".format(toolbox)
+        raise ValueError("OEH Layers Addin Toolbox not found: {}".format(toolbox))
 
     return toolbox
 

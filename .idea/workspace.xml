@@ -4,14 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b168b80-23d6-4366-a1dd-01be8d4b5889" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/core_layers_addin.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core_layers_tools.pyt" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/oeh-arcmap-addin.iml" afterPath="$PROJECT_DIR$/.idea/oeh-arcmap-addin.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/oeh-arcmap-addin.esriaddin" afterPath="$PROJECT_DIR$/oeh-arcmap-addin.esriaddin" />
-    </list>
+    <list default="true" id="8b168b80-23d6-4366-a1dd-01be8d4b5889" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -67,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core_layers_tools.pyt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="core_layers_tools.pyt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Install/core_layers_tools.pyt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -344,14 +337,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dev.pyt" />
     <entry file="file://$PROJECT_DIR$/dev.pyt" />
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Install/core_layers_addin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -389,6 +374,14 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
