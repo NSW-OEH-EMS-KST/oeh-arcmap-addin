@@ -14,7 +14,6 @@ def get_toolbox():
 
 
 class AddLayerButton(object):
-    """Implementation for thickOutline_addin.button (Button)"""
 
     def onClick(self):
 
@@ -24,6 +23,6 @@ class AddLayerButton(object):
 
         except Exception as e:
 
-            pythonaddins.MessageBox("Error: {}".format(e), "Add Layer")
+            pythonaddins.MessageBox("Error: {}".format(e), "Add Core Layers")
 
         return
